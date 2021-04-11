@@ -1,10 +1,10 @@
 def longest(userlist):
-    # minlen = 1
-    # for word in userlist:
-    #     if len(word) > minlen:
-    #         minlen = len(word)
-    #         longest = word
-    longest = max(userlist, key = len)
+    minlen = 1
+    for word in userlist:
+        if len(word) > minlen:
+            minlen = len(word)
+            longest = word
+    # longest = max(userlist, key = len)
     return(longest)
 
 userlist = []

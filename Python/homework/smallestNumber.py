@@ -1,7 +1,11 @@
 def smallest(userlist):
-    smallest = min(userlist)
-    return(smallest)
-
+    #smallest = min(userlist)  
+    min = userlist[0]
+    for number in userlist:
+        if number < min:
+            min = number
+    return min
+    
 
 userlist = []
 try:

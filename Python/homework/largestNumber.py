@@ -1,7 +1,9 @@
 def largest(userlist):
-    largest = max(userlist)
-    return(largest)
-
+    max = userlist[0]
+    for number in userlist:
+        if number > max:
+            max = number
+    return max
 
 userlist = []
 try:
