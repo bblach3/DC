@@ -165,8 +165,8 @@ alphabet = "abcdefghijklmnopqrstuvwxyz"
 #     for seconds in range(1, 3):
 #         print(seconds) # for range (1,10) prints 100 items(10 outer loops * 10 inner loops)
 
-for count in range(1, 11):
-    for n in range(1, 11):
-        total = count * n
-        print(f'{count} X {n} = {total}')
+# for count in range(1, 11):
+#     for n in range(1, 11):
+#         total = count * n
+#         print(f'{count} X {n} = {total}')
     
