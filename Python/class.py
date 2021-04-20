@@ -170,3 +170,113 @@ alphabet = "abcdefghijklmnopqrstuvwxyz"
 #         total = count * n
 #         print(f'{count} X {n} = {total}')
     
+
+# names = ["Q", "Jose", "Brandon", "Carol", "Jacob", "Jason"]
+
+# for name in names:
+#     if(name == "Destiny"):
+#         print('found')
+
+# #FirstDictionary = {key: value}
+
+# names = {
+#     "Q" : "Atlanta",
+#     "Jose": "Atlanta",
+#     "Brandon": "Dallas",
+#     "Carol": "Atlanta",
+#     "Jacob": "Tampa",
+#     "Jason": "Nashville"
+
+# }
+
+
+# items = names.items()
+
+# for key, value in names.items():
+
+
+
+# print(items)
+
+
+#print(result)
+
+
+# names["Brandon"] = "Houston"
+
+
+# #del names["Veronica"]
+# names["Veronica"] = "Houston"
+
+# nameList = names.keys()
+
+# valueList = names.values()
+# print(valueList)
+
+
+
+# my_dictionary = {
+#     "hello" :   "world",
+#     "sqareOfTwo" : 4,
+#     "theMeaningOfLife" : 42,
+#     0 : 1
+# }
+
+# contact = [
+#     {
+#         'first_name': 'Phillip',
+#         'last_name': 'Guo',
+#         'email': 'phillip.guo@gmail.com',
+#         'phone':{
+#             'work':'837-494-3948',
+#             'cell': '234-897-4933'
+#         }
+#     },
+#     {
+#         'first_name': 'Mark',
+#         'last_name': 'Guzdial',
+#         'email': 'mark.guzdial@gatech.edu',
+#         'phone':{
+#             'work':'484-569-3466',
+#             'cell': '493-485-9845'
+#         }
+#     }
+# ]
+
+# print(contact[0]['phone']['work'])
+
+letters = {}
+
+#alphabet = "abcdefghijklmnopqrstuvqxyz"
+
+word = input("Please entere a word: ")
+count = 0
+key = 0
+#for key in alphabet:
+for key in word:
+    count += 1
+    letters[key] = count
+
+print(letters)
+
+topThree = []
+
+for key, value in letters.items():
+    pair = {"word": key, "count:" value}
+    index = 0
+    for i in range(len(topThree)):
+        if (value > topThree[i]['count'])
+            index = i
+            break
+        index = i + 1
+
+    topThree.insert(index, pair)
+
+print(topThree)
+
+# names["Veronica"] = "Houston"
+
+# nameList = names.keys()
+
+# valueList = names.values()
+# print(valueList)

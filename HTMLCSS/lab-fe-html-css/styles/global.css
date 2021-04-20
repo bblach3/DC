@@ -1,0 +1,40 @@
+
+
+p{
+            color:white;
+            background-color: blue;
+            text-align: right;
+            font-size: 15px;
+            padding-left: 10px;
+
+        }
+
+        h1 {
+            font-size: 10px;
+            font-weight: normal;
+        }
+
+        div>ol{
+            color: green;
+        }
+
+        .ourStyleRule{
+            background-color:white;
+            color:black;
+            font-size: 20px;
+        }
+
+        .darkStyle{
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+
+        #dark{
+            background-color: black;
+            color: white;
+        }
+
+        div{
+            background-color: pink;
+        }

@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+
+}
+
+
+
+.header{
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    background-color: yellow;
+}
+
+.imgContainer{
+    position: relative;
+
+}
+
+.cityImage{
+    position: absolute;
+    top: -200;
+}

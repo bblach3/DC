@@ -2,12 +2,12 @@
 import random
 
 lives = 9
-#words = ["pizza", "fairy", "shirt", "plane", "javascript"]
+words = ["pizza", "fairy", "shirt", "plane", "javascript"]
 # test = "hello"
 # x = test.count("l")
 
 # print(x)
-
+a
 secret_word = random.choice(words)
 #guess = '_ ' * len(secret_word)  
 clue = []
@@ -19,9 +19,7 @@ def update_clue(guessed_letter):
     while index < len(secret_word):
         if guessed_letter == secret_word[index]:
             clue[index] = guessed_letter
-
         index += 1
-
 
 
 # while lives > 0:
@@ -29,8 +27,8 @@ def update_clue(guessed_letter):
     print(f'You have {lives} lives.')
     letter = input("Enter a letter or the whole word: ")
 
-if guess in secret_word:
-    update_clue(guess)
+if clue in secret_word:
+    update_clue(clue)
 
 else:
         print('Incorrect. You lose a life')
