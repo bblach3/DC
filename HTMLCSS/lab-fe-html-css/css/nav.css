@@ -1,0 +1,69 @@
+
+    body{
+        margin: 0px;
+    }
+
+    nav{
+        display: flex;
+        background-color:rgb(63, 52, 52);
+        color: white;
+        justify-content: space-between;
+        padding-right: 30px;
+
+    }
+
+
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    a:hover{
+        /* text-decoration: underline; */
+        color: rgb(31, 27, 27);
+        
+    }
+
+    ul{
+        display: flex;
+        margin-right: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+
+    li{
+        margin-right: 15px;
+        list-style: none;
+        padding: 20px;
+
+
+    }
+
+    li:hover{
+        
+        background-color: rgb(173, 158, 158);
+    }
+
+    main{
+        display: flex;
+        height: 80vh;
+        width: 100vw;
+    }
+
+    .sides{
+        flex: 1;
+        background-color: yellow;
+        padding: 0px, 10px 0px 10px;
+    }
+
+
+    .content{
+        flex: 5;
+        padding: 25px 15px 0px 15px;
+        font-size: 20px;;
+        
+
+    }

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .container{
+            height: 500px;
+            background-color: turquoise;
+            display: flex;
+            justify-content: flex-start; /* main axis */
+            align-items: center; /* cross axis */
+            flex-direction: row; /* identifies main axis */
+            
+        }
+
+        .item{
+            /* width: 150px; */
+            height: 130px;
+            background-color: red;
+            color: white;
+            margin: 0px;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+
+   
+
+        .itemleft{
+            height: 450px;
+            background-color:green;
+            color: white;
+            margin: 10px;
+            font-size: 20px;
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            align-self: flex-start;
+
+        }
+
+        .itemright{
+            height: 450px;
+            background-color:purple;
+            color: white;
+            margin: 10px;
+            font-size: 20px;
+            display: flex;
+            /* justify-content: start;
+            align-items: center; */
+            align-self: flex-start;
+
+
+        }
+
+
+        .fg1{
+            flex-grow: 1;
+        }
+
+        .fg2{
+            flex-grow: 1;
+        }
+
+        .fg3{
+            flex-grow: 3;
+        }
+
+        .top{
+            flex-grow: 1;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="item fg1">Header</div>
+
+    <div class ="container">
+
+        
+        <div class="itemleft fg2">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore blanditiis veritatis harum officia, necessitatibus quidem quasi commodi atque quisquam nulla, tenetur dolor suscipit, rem ut nihil error numquam aliquam velit.
+            <br>
+            
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae perferendis, suscipit atque magnam totam nobis tenetur quas dolorem ipsum vel unde? Officiis, non eum unde culpa fuga porro voluptatum quisquam?
+
+
+
+
+        </div>
+        <div class="itemright fg3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, officiis rerum vel voluptates recusandae suscipit hic repellat! Officia recusandae velit deserunt, maiores veritatis numquam consequatur vitae, tenetur excepturi omnis reiciendis?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad eius voluptatum voluptates dicta similique neque repellat? Odit, a tenetur, suscipit, iste deserunt qui inventore ratione unde id placeat beatae pariatur?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, officiis rerum vel voluptates recusandae suscipit hic repellat! Officia recusandae velit deserunt, maiores veritatis numquam consequatur vitae, tenetur excepturi omnis reiciendis?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad eius voluptatum voluptates dicta similique neque repellat? Odit, a tenetur, suscipit, iste deserunt qui inventore ratione unde id placeat beatae pariatur?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum necessitatibus, aut est consequuntur esse at minus accusamus illo? Sed praesentium nobis quas optio, cupiditate ipsa ipsum ullam nesciunt voluptas! Placeat!
+        </div>
+        
+       
+    </div>
+    <div class="item fg4">Footer</div>
+
+</body>
+</html>
