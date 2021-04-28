@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <style>
+         .bg-blue{
+            background-color:rgb(129, 129, 231);
+        }
+
+
+         .bg-blue a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .bg-blue a:hover{
+            color: white;
+            text-decoration: underline;
+        }
+
+        .bg-grey{
+            background-color: rgb(218, 206, 206);
+        }
+
+   
+    </style>
+
+
+
+</head>
+<body>
+    
+
+    <div id="container">
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script>
+
+
+
+
+
+
+function createAnchor(url, text, style){
+    var anchor = document.createElement('a')
+    anchor.setAttribute('class', style);
+    anchor.setAttribute('href',url)
+    anchor.textContent = text;
+
+    return anchor
+} 
+
+
+function containerdiv(text, style) {
+    var divel = document.createElement('div')
+    divel.setAttribute('class', style)
+    divel.textContent = text
+
+    return divel
+
+}
+
+function containerdiv2(text, style) {
+    var divel = document.createElement('div')
+    divel.setAttribute('class', style)
+    divel.textContent = text
+
+    return divel
+
+}
+function containerdiv3(text, style) {
+    var divel = document.createElement('div')
+    divel.setAttribute('class', style)
+    divel.textContent = text
+
+    return divel
+
+}
+function containerdiv4(text, style) {
+    var divel = document.createElement('div')
+    divel.setAttribute('class', style)
+    divel.textContent = text
+
+    return divel
+
+}
+function containerdiv5(text, style) {
+    var divel = document.createElement('div')
+    divel.setAttribute('class', style)
+    divel.textContent = text
+
+    return divel
+
+}
+function containerdiv6(text, style) {
+    var divel = document.createElement('div')
+    divel.setAttribute('class', style)
+    divel.textContent = text
+
+    return divel
+
+}
+function containerdiv7(text, style) {
+    var divel = document.createElement('div')
+    divel.setAttribute('class', style)
+    divel.textContent = text
+
+    return divel
+
+}
+function containerdiv8(text, style) {
+    var divel = document.createElement('div')
+    divel.setAttribute('class', style)
+    divel.textContent = text
+
+    return divel
+
+}
+
+
+var container = document.querySelector('#container')
+
+
+var headerAnchor = createAnchor('#', "HightOnCoding", "navbar-brand p-3 bg-blue")
+var homeAnchor = createAnchor('#', "Home", "nav-link active")
+var categoriesAnchor = createAnchor("#", "Categories", "nav-link")
+var divcontainer = containerdiv("Curse of the Current Reviews", "bg-grey h2 p-3 ms-4 me-4 mb-0 mt-3")
+
+var divcontainer2 = containerdiv("When you want to buy any application from the Apple iTunes store you have more choices than you can handle. Most of the users scroll past the application description completely avoiding it like ads displayed on the right column of your webpage. Their choice is dependent on three important factors price, screenshot and reviews.", "bg-grey p-2 ms-4 me-4 mb-3")
+
+var divcontainer3 = containerdiv("Hello WatchKit", "bg-white text-primary h4 p-3 ms-4 me-4")
+var divcontainer4 = containerdiv("Last month Apple released the anticipated WatchKit Framework for developers in the form of iOS 8.2 beta SDK release. The WatchKit framework enable the developers to create Apple Watch applications. In this article we are going to focus on the basics of getting started with the WatchKit framework and developing apps for the Apple Watch", "bg-light bg-white p-1 ms-4 me-4")
+var divcontainer5 = containerdiv("12 comments 124 likes", "bg-warning text-light p-1 ms-4 me-4 mt-0")
+
+var divcontainer6 = containerdiv("Introduction to Swift", "bg-white text-primary h4 p-3 ms-4 me-4")
+var divcontainer7 = containerdiv("Swift is a modern programming language developed by Apple to create the next generation of iOS and OSX applications. Swift is a fairly new language and still in development but it clearly reflects the intentions and the future direction. This article will revilve around the basic concepts in the Swift Language and how you can get started.", "bg-white p-1 ms-4 me-4")
+var divcontainer8 = containerdiv("15 comments 45 likes", "bg-warning text-light p-1 ms-4 me-4")
+
+//create nav bar
+var nav = document.createElement('nav');
+nav.setAttribute('class', "navbar navbar-expand-lg bg-blue")
+
+nav.append(headerAnchor)
+nav.append(homeAnchor);
+nav.append(categoriesAnchor);
+
+container.append(nav);
+
+
+container.append(divcontainer)
+container.append(divcontainer2)
+container.append(divcontainer3)
+container.append(divcontainer4)
+container.append(divcontainer5)
+container.append(divcontainer6)
+container.append(divcontainer7)
+container.append(divcontainer8)
+
+
+
+    </script>
+</body>
+</html>
