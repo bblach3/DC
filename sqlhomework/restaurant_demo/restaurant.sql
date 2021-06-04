@@ -1,0 +1,59 @@
+-- CREATE TABLE restaurant(
+--     id SERIAL PRIMARY KEY,
+--     name varchar(25),
+--     address varchar(40),
+--     category varchar(25)
+-- );
+-- CREATE TABLE reviewer(
+--     id SERIAL PRIMARY KEY,
+--     name varchar(25),
+--     email varchar(25),
+--     karma integer CHECK (karma > 0 and karma < 8)
+-- );
+-- CREATE TABLE review(
+--     id SERIAL PRIMARY KEY,
+--     reviewer_id integer REFERENCES reviewer(id),
+--     stars integer CHECK (stars > 0 and stars < 6),
+--     title varchar(30),
+--     review text,
+--     restaurant_id integer REFERENCES restaurant(id)
+-- );
+-- INSERT INTO restaurant VALUES
+-- (DEFAULT,'Farm Burger','410B W. Ponce De Leon Ave.','Quick Bite'),
+-- (DEFAULT,'Communnity Q BBQ','1361 Clairmont Rd','Quick Bite'),
+-- (DEFAULT,'Golden Buddah','1905 Clairmont Rd','Chinese'),
+-- (DEFAULT,'Victory Sandwich Bar','340 Church St','American'),
+-- (DEFAULT,'Jennys Ice Cream','545 N McDonough St','American'),
+-- (DEFAULT,'Twains','211 E Trinity Pl','American'),
+-- (DEFAULT,'Las Brasas','614 Church Street ','Latin'),
+-- (DEFAULT,'Raging Burrito','141 Sycamore St','Mexican');
+-- INSERT INTO reviewer VALUES
+-- (DEFAULT,'Kerry Cawthorne','kerry@email.com',4),
+-- (DEFAULT,'Layla Stillman','layla@email.com',6),
+-- (DEFAULT,'Bruce Mccue','bruce@email.com',3),
+-- (DEFAULT,'Linn Galley','linn@email.com',2),
+-- (DEFAULT,'Karisa Ice','karisa@email.com',7),
+-- (DEFAULT,'Ellan Stucker','ellan@email.com',6),
+-- (DEFAULT,'Kristopher Blye','kris@email.com',3);
+-- INSERT INTO review VALUES 
+-- (DEFAULT,1,5,'Amazing!','Never knew rotisserie chicken could be so fabulous!!! This place is a hidden gem in a foodie downtown ......everything on the menu is freshly prepared with amazing flavor. The cocktails are also wonderful.... The chicken fried rice is another must try on the menu.', 7),
+-- (DEFAULT,6,3,'It was decent','Came after a day of community service. The duck breast skewers were good. The potatoes were Bland. The empanadas were good. The service was cool I give a little understanding because of all this going on currently', 7),
+-- (DEFAULT,1,5,'Yummy','There is literally something for everyone from the typical flavors to more exotic flavors (think goat cheese and cherries). You will not be disappointed in what you get! I picked a non-dairy option it was peanut butter and jelly and it was delish!', 5),
+-- (DEFAULT,3,4,'Excellent Burger','Fresh Food, Excellent Staff. Located on Poncey in Downtown Decatur. Great Burgers and fries, parking can be a hassle (as most of Decatur), Atmosphere is lacking, but can eat outside at tables. location is close to all of Decaturs many appealing spots. Enjoy', 1),
+-- (DEFAULT,4,1,'Simply not good',' rarely give anywhere less than four stars, but Golden Buddha is without a doubt a one star spot. We ordered the Princess Chicken (Kung Pao) which tasted more like Mongolian Chicken. It was so dry and tasteless I honestly do not know if it was the right dish. We also ordered the sweet and sour chicken was was definitely better, but still bland and lacking sauce. The crab rangoons were decent, I will give them that, but this is the second time Ive eaten here and likely the last. I didnt expect anything mind blowing, just wanted some standard Chinese takeout thats normally tough to mess up, but I was sorely disappointed.', 3),
+-- (DEFAULT,5,5,'Best BBQ in Atlanta','Service is just as incredible as the food. The brisket is the best in ATL and the sides, particularly the mac n cheese are just as good. Can not wait to come back', 2),
+-- (DEFAULT,7,4,'Get the vic-fila','Order the Vic-fila you will thank me later. Nice eyes sandwiches prices are very affordable plenty of outdoor seating. Little sandwiches with a big taste', 4),
+-- (DEFAULT,4,4,'Great Tacos/Burritos','It is totally worth your money. The chips were a little under seasoned and greasy but the proteins in the tacos and burritos were juicy and flavorful. Portions are huge. But, if you ask, you do not have to include the sides. Service was good too. And, the weather was perfect for sitting out on their back patio which has a fun ambiance to it.', 8),
+-- (DEFAULT,3,5,'Hidden gem','Creative burrito recipes. Great margaritas. Venue is very cool. Planning to return on my next visit to Decatur.', 8),
+-- (DEFAULT,2,5,'Quick and delicious','Service was great! Food was even better! Make sure you go hungry these burritos are huge! Get the appetizer trio', 8),
+-- (DEFAULT,7,5,'Really Yummy','typical local restaurant - Very good ribs and grilled pork - Do not miss the Mac n Cheese. A nice and affordable meal. You usually have to queue up up it worth it', 2),
+-- (DEFAULT,2,5,'Perfect snack.','Perfect Sunday afternoon snack. The sandwiches are small (but they are only $5!) but delicious! Pair them with a $3 Miller high life and you will be glad you did!', 4),
+-- (DEFAULT,5,4,'Dinner with friends','Finally decided to dine here one rainy night. We were quickly seated. It is a cozy space with very friendly staff especially Jeremy. He guided us thru the menu and even made some suggestions. Started with the lamb empanadas, pantacones, pollo saltado and cheese cake for dessert. Portions are large, well prepared and served hot! This was our first Peruvian dinner and it was fantastic!', 7),
+-- (DEFAULT,5,5,'This is My Go-To Favorite','What is there not to like at this Peruvian jewel of a restaurant? My family from out of town always ask to eat there. I find the rotisserie chicken is totally authentic to Peru and the sides make a mockery of those in other restaurants.', 7),
+-- (DEFAULT,6,2,'Unappetizing','We read a lot of really great reviews and were really looking forward to coming here. We left incredibly disappointed with pretty much every part of the meal. The burgers and fries were bland, the sweet potato hush puppies were undercooked and the freshness heralded as the hallmark of Farm Burgers was lacking. The onion rings are the only reason there is anything positive to say. Will not be returning.', 1),
+-- (DEFAULT,7,3,'Lunch on a weekday.','Do not order the Egg Foo Young. It did not even remotely resemble it. The rest of the meal was very generous in portion and flavor for typical American Chinese food. Nice restaurant ,well run, good service. Large lunch menu with specials for about $9.00 per plate with great additions. A very good value with enough food to feed two people per meal deal.', 3),
+-- (DEFAULT,1,4,'Surpisingly great take out','Ordered take out with special requests to the items when just too tired while a guest was visiting. I had not visited Golden Buddha, a landmark in the Toco Hills community, in years. The dishes were hot, freshly prepared and more than sufficient for 3 adults. We will be back', 3),
+-- (DEFAULT,1,5,'Tasty Burrito
+-- ','I stopped in with little time to spare to grab a take-out burrito. It took a few minutes but it was worth it. I got the standard Raging Burrito in a flour tortilla with black beans. Nothing unusual but a good value and very tasty. It was exactly what I was looking for.', 8),
+-- (DEFAULT,3,5,'Delicious','This place is awesome. Service is was great and the food is delicious. The fries are aweome and the chicken & ribs are tasty.', 2),
+-- (DEFAULT,4,4,'Yum!','Went with daughter and grandkids. Was a real treat! Staff very patient and helpful. Enjoyed tasting several. I ended with the three flight option which was great as a sampler. Loved the sorbets!', 5);

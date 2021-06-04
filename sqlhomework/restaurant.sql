@@ -60,3 +60,5 @@
 -- SELECT AVG(stars), category FROM restaurant GROUP BY category
 
 -- SELECT MAX(stars), category FROM restaurant GROUP BY category
+
+

@@ -1,0 +1,11 @@
+     name     |       title        |                                                                  review                                                                   |       name        
+--------------+--------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------------------
+ Jason Spark  | Plenty to Like     | Good steaks, good side dishes, variety of drinks, decent customer service.                                                                | Tony Steak
+ Jason Spark  | Somewhat Overrated | Good food, but that is about it. There was as long wait for the waiter and food took even longer to arrive.                               | Sparks Steakhouse
+ Ken More     | Classic            | This restaurant has all the dishes from Mexican cusine you can imagine. Service is decent but interior upkeep is lacking                  | Goosefoot
+ Mary Gionne  | True Thai          | The most authentic Thai restaurant without actually going to Thailand. Excelelent service and low prices.                                 | Temporis
+ Mary Gionne  | Avoid              | This place is extremely pricy for what you get. Postions are tiny, very small selection of drinks, and waiters are rude. Will not be back | Ben Benson
+ Peter Salone | The Best           | This is simply the best Mexican restaurant in the area. The food is top notch, the service is great, and prices are unbeatable.           | Goosefoot
+ Peter Salone | Terrible           | After a very long wait food arrived rather cold. Very pricy drinks, and bathroom was filthy.                                              | Sparks Steakhouse
+(7 rows)
+
